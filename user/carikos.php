@@ -86,7 +86,7 @@ if (isset($_POST['set-filter'])) {
         <section class="kos-field">
             <div class="row">
                 <?php foreach ($dataKost as $kos) : ?>
-                    <div class="col-2" style="margin-right:120px ; margin-bottom: 10px;">
+                    <div class="col-2" style="margin-right:200px ; margin-bottom: 30px;">
                         <a href="detailKosan.php?q=<?= $kos['id'] ?>">
                             <div class="card" style="width: 18.1rem;">
                                 <img src="../assets/upload/<?= $kos['gambar_preview'] ?>" class="card-img-top">

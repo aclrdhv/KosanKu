@@ -13,7 +13,6 @@ $rekeningPemilik = getRekeningInfo($idPemilik);
 
 $totalPembayaran = $_SESSION['harga'] * $_SESSION['durasi'];
 
-
 ?>
 
 <!DOCTYPE html>
@@ -69,7 +68,7 @@ $totalPembayaran = $_SESSION['harga'] * $_SESSION['durasi'];
                 <div class="col-md-5 col-sm-12">
                     <section class="informasi-kost mt-3">
                         <div class="nama-kost mb-3">
-                            <h3 class="text-center">Ini nama kosan</h3>
+                            <h3 class="text-center">Pondok Zeta Kost</h3>
                         </div>
                         <div class="gambar text-center mb-3">
                             <img src="../user/assets/images/kamar_kos.jpg" alt="gambar kost" class="img-kost img-fluid" width="450" height="300">
@@ -102,7 +101,7 @@ $totalPembayaran = $_SESSION['harga'] * $_SESSION['durasi'];
                         <hr class="sidebar-divider mt-1 bg-light">
                         <form action="" class="mb-3 ms-5 me-5">
                             <input type="file" class="form-control" id="inputGroupFile02"><br><br>
-                            <input type="submit" value="Konfirmasi Pembayaran" style="background-color: #2155CD; border:none; color:#ffffff;padding:10px 60px; border-radius:30px;">
+                            <input type="submit" value="Konfirmasi Pembayaran" onclick="showNotification()" style="background-color: #2155CD; border:none; color:#ffffff;padding:10px 60px; border-radius:30px;">
                         </form>
                     </section>
                 </div>
@@ -271,6 +270,12 @@ $totalPembayaran = $_SESSION['harga'] * $_SESSION['durasi'];
         2023 © Copryright <a class="text-white" href="#kosanku.com">KOSANKU</a> - All rights reserved - Made in
         Telkom University Bandung
     </div>
+    <script>
+    function showNotification() {
+        alert('Pembayaran Sukses!');
+        window.location.href = 'http://localhost/kosanku/user/carikos.php';
+    }
+    </script>
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>

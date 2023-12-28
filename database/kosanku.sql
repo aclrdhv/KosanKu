@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 28 Des 2023 pada 05.49
+-- Waktu pembuatan: 29 Des 2023 pada 00.30
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 8.1.6
 
@@ -115,7 +115,7 @@ INSERT INTO `kamar` (`id_kost`, `status`, `lebar`, `panjang`, `idKamar`) VALUES
 (3, 'TERISI', 3, 4, '62cb6bb98cdfa'),
 (3, 'TERISI', 3, 4, '62cb6bb98e245'),
 (3, 'KOSONG', 3, 4, '62cb6bb98f107'),
-(3, 'KOSONG', 3, 4, '62cb6bb98ffc5'),
+(3, 'TERISI', 3, 4, '62cb6bb98ffc5'),
 (3, 'KOSONG', 3, 4, '62cb6bb9922b8'),
 (3, 'TERISI', 3, 4, '62cb6bb993545'),
 (3, 'KOSONG', 3, 4, '62cb6bb9947f3'),
@@ -131,18 +131,13 @@ INSERT INTO `kamar` (`id_kost`, `status`, `lebar`, `panjang`, `idKamar`) VALUES
 (13, 'KOSONG', 3, 4, '62cdba667f1bf'),
 (13, 'KOSONG', 3, 4, '62cdba667f675'),
 (13, 'KOSONG', 3, 4, '62cdba667f949'),
-(13, 'KOSONG', 3, 4, '62cdba667fbf6'),
+(13, 'TERISI', 3, 4, '62cdba667fbf6'),
 (13, 'KOSONG', 3, 4, '62cdba667fe6e'),
 (13, 'KOSONG', 3, 4, '62cdba66800f5'),
 (13, 'KOSONG', 3, 4, '62cdba6680358'),
 (13, 'KOSONG', 3, 4, '62cdba66805b3'),
 (13, 'KOSONG', 3, 4, '62cdba6680d7e'),
-(13, 'KOSONG', 3, 4, '62cdba668100c'),
-(16, 'KOSONG', 3, 4, '62cdc71cb148a'),
-(16, 'KOSONG', 3, 4, '62cdc71cb1785'),
-(16, 'KOSONG', 3, 4, '62cdc71cb1a23'),
-(16, 'KOSONG', 3, 4, '62cdc71cb1daf'),
-(16, 'TERISI', 3, 4, '62cdc71cb203e');
+(13, 'KOSONG', 3, 4, '62cdba668100c');
 
 -- --------------------------------------------------------
 
@@ -167,10 +162,9 @@ CREATE TABLE `kost` (
 --
 
 INSERT INTO `kost` (`id`, `alamat`, `nama`, `jumlahKamar`, `NIK_Pemilik`, `harga`, `fasilitas`, `jenis`, `gambar_preview`) VALUES
-(3, ' Jl. Raya Manukan, Mladangan', 'Kost Mawar', 21, '1234890723456789', 430000, '', 'Putri', '62c833dc576a1.jpg'),
-(5, 'Cost Putra Sadewa Pugeran, Maguwoharjo, Depok, Sleman', 'Kost Sadewa', 20, '8907134586971234', 560000, '', 'Putra', '62cb6b0bcd1c1.jpg'),
-(13, 'Kaliurang St No.KM 15, Ngemplak, Umbulmartani, Ngemplak, Sleman Regency, Special Region of Yogyakarta 55584', 'KOOL KOST near UII Jakal Yogyakarta', 10, '1234890723456789', 1000000, 'AC,Kamar Mandi Dalam,Wifi,Listrik,Kasur,Lemari,Meja', 'Putri', '62cdba667c0a3.jpg'),
-(16, 'UII, Jl. Kaliurang KM 14, Perumahan Kavling, Jl. Angsa No.C12, Besi, Sukoharjo, Kec. Ngaglik, Kabupaten Sleman, Daerah I', 'Kost Adani Muslimah UII', 5, '1234890723456789', 1000000, 'AC,Kamar Mandi Dalam,Wifi,Listrik,Kasur,Lemari', 'Putri', '62cdc71cae624.jpg');
+(3, ' Jl. Mengger Hilir no. 86', 'Pondok Zeta Kost', 21, '1234890723456789', 430000, 'AC,Kamar Mandi Dalam,Wifi,Listrik,Kasur,Lemari,Meja', 'Putra', 'zeta.jpg'),
+(5, 'Jl. Terusan Buah Batu Gg Pa Edo no 39', 'Wismalana kost', 20, '8907134586971234', 560000, '', 'Putra', 'wisma.jpg'),
+(13, 'Jl. Sukabirus No.50A', 'Pondok Teruna', 10, '1234890723456789', 700000, 'Kamar Mandi Dalam,Wifi,Listrik,Kasur,Lemari,Meja', 'Putri', 'teruna.jpg');
 
 -- --------------------------------------------------------
 
@@ -192,6 +186,7 @@ CREATE TABLE `pemilik` (
 --
 
 INSERT INTO `pemilik` (`NIK`, `nama`, `noTelp`, `alamat`, `email`, `keypassword`) VALUES
+('12312312312', 'mama mama', '0878127181', 'mamamama', 'mama@gmail.com', '$2y$10$LHwWXQGZTQi7uJ7YDavvvOeDtneqV8j03HumS4E11hOIUYH8qqf5W'),
 ('1234096789123456', 'test test', '123456789123', 'test ', 'test@gmail.com', '$2y$10$ym51t82wfJFxA79UYaK4c.RRONg1VVPuNU9Y6i0U9iv8F/tt9zoH6'),
 ('1234123412341234', 'corn wall', '081234561234', 'jl. kaliurang km 12.5', 'corn@gmail.com', '$2y$10$kBiuyx229Si5Ecx23wXqweF4KrxXjHlBr2YIAIs2J1fTokRungcPu'),
 ('1234890723456789', 'dara zara', '091234567890', 'Tanggerang Selatan', 'dara@gmail.com', '$2y$10$WlOtfRF8zfHkEsVGanoP8eFDPCnnfEzQ7AfUNd3W1fRlrcQHRsANq'),
@@ -233,7 +228,8 @@ INSERT INTO `penyewaan` (`id`, `NIK_penyewa`, `tannggal_mulai`, `tanggal_akhir`,
 (10, '1989403989087564', '2022-07-26', '2022-10-25', '62cb6b0be02a6', 3),
 (12, '1989403989087564', '2022-07-25', '2023-07-25', '62cb6bb98cdfa', 3),
 (13, '1989403989087564', '2022-07-13', '2022-12-12', '62cb6b0bd6fa2', 3),
-(16, '1989403989087564', '2022-07-13', '2022-10-12', '62cdc71cb203e', 3);
+(18, '1989403989087564', '2022-07-12', '2022-09-10', '62cb6bb98ffc5', 3),
+(19, '123456789', '2023-12-22', '2024-01-21', '62cdba667fbf6', 3);
 
 -- --------------------------------------------------------
 
@@ -256,17 +252,25 @@ CREATE TABLE `pesanan` (
 --
 
 INSERT INTO `pesanan` (`idPesanan`, `idPemesan`, `idKost`, `tglPemesanan`, `mulaiSewa`, `akhirSewa`, `totalPembayaran`) VALUES
-('62cd79d339330', '1989403989087564', 3, '2022-07-12', '2022-07-12', '2022-09-10', 860000),
 ('62cd7edd942ca', '1989403989087564', 5, '2022-07-12', '2022-07-12', '2022-11-10', 2240000),
 ('62cdd67f4066c', '1989403989087564', 3, '2022-07-12', '2022-07-13', '2022-10-12', 1290000),
 ('62cdd6bed68db', '1989403989087564', 5, '2022-07-12', '2022-07-13', '2022-09-11', 1120000),
 ('62cdd874858be', '1989403989087564', 3, '2022-07-12', '2022-07-13', '2022-09-11', 860000),
-('658c31fd47828', '123456789', 3, '2023-12-27', '2023-12-22', '2024-01-21', 430000),
 ('658c41bcaa1d9', '123456789', 5, '2023-12-27', '2023-12-31', '2024-02-29', 1120000),
 ('658c41e1ca39a', '123456789', 3, '2023-12-27', '2023-12-28', '2024-05-28', 2150000),
 ('658c46c925314', '123456789', 13, '2023-12-27', '2023-12-27', '2024-12-26', 12000000),
 ('658c46fc28a5a', '123456789', 13, '2023-12-27', '2023-12-27', '2024-12-26', 12000000),
-('658c472edf03d', '123456789', 13, '2023-12-27', '2023-12-27', '2024-12-26', 12000000);
+('658c472edf03d', '123456789', 13, '2023-12-27', '2023-12-27', '2024-12-26', 12000000),
+('658d4cd5eee2b', '123456789', 5, '2023-12-28', '2023-12-28', '2024-01-27', 560000),
+('658d4d121da8a', '123456789', 5, '2023-12-28', '2023-12-29', '2024-12-28', 6720000),
+('658d4da830126', '123456789', 13, '2023-12-28', '2023-12-28', '2024-02-26', 2000000),
+('658d4dba098c9', '123456789', 3, '2023-12-28', '2023-12-28', '2024-01-27', 430000),
+('658d4e56a2cfa', '123456789', 3, '2023-12-28', '2023-12-28', '2024-12-27', 5160000),
+('658d557d3e906', '123456789', 5, '2023-12-28', '2023-12-28', '2024-12-27', 6720000),
+('658d55dbaf84f', '123456789', 5, '2023-12-28', '2023-12-28', '2024-02-26', 1120000),
+('658df63cc4605', '123456789', 3, '2023-12-28', '2023-12-29', '2024-12-28', 5160000),
+('658e04263251b', '123456789', 3, '2023-12-29', '2023-12-29', '2024-12-28', 5160000),
+('658e04d26a137', '123456789', 3, '2023-12-29', '2023-12-29', '2024-01-28', 430000);
 
 -- --------------------------------------------------------
 
@@ -285,7 +289,8 @@ CREATE TABLE `rekening` (
 --
 
 INSERT INTO `rekening` (`NoRekening`, `bank`, `NIK_Pemilik`) VALUES
-('2345095482', 'BCA', '1234890723456789');
+('2345095482', 'BCA', '1234890723456789'),
+('3214657733', 'Mandiri', '8907134586971234');
 
 -- --------------------------------------------------------
 
@@ -416,7 +421,7 @@ ALTER TABLE `kost`
 -- AUTO_INCREMENT untuk tabel `penyewaan`
 --
 ALTER TABLE `penyewaan`
-  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
