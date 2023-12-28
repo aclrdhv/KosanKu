@@ -29,7 +29,7 @@
     <link rel="canonical" href="/">
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
   <body data-home-page="https://website6119077.nicepage.io/Page-8.html?version=39dd93d5-67f8-f27c-feb2-66f3370badd0" data-home-page-title="Page 8" data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en"> 
-    <section class="skrollable skrollable-between u-align-center u-clearfix u-image u-shading u-section-1" id="sec-e1ff" src="" data-image-width="3840" data-image-height="2130">
+    <section style="min-height: 923px; overflow-y:hidden !important;" class="skrollable skrollable-between u-align-center u-clearfix u-image u-shading u-section-1" id="sec-e1ff" src="" data-image-width="3840" data-image-height="2130">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-text u-text-default u-text-1">KosanKu</h2>
         <p class="u-custom-font u-large-text u-text u-text-variant u-text-2">
