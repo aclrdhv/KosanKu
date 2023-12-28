@@ -161,7 +161,7 @@ $barChartData = array(
                                 <div class="sidebar-brand-icon">
                                     <img src="../owner/assets/icons/KosanKu2.png" alt="#logo">
                                 </div>
-                                <h4 class="sidebar-brand-text ms-1 text-white mt-3">KosanKu</h4>
+                                <h4 class="sidebar-brand-text ms-1 text-white mt-3">KOSANKU</h4>
                             </a>
 
                             <!-- Divider -->
@@ -241,7 +241,7 @@ $barChartData = array(
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <span class="text-capitalize"><?= $dataPemilik["nama"] ?></span>
-                                                <img class="img-profile rounded-circle ms-2 mb-1" width="20px" height="20px" src="../owner/assets/icons/KosanKu2.png">
+                                                <img class="img-profile rounded-circle ms-2 mb-1" width="20px" height="20px" src="../owner/assets/icons/logo.png">
                                             </a>
                                             <!-- Dropdown - User Information -->
                                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">

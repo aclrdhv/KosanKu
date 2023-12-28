@@ -98,7 +98,7 @@ if (!isset($_SESSION['login-admin'])) {
                                 <div class="sidebar-brand-icon">
                                     <img src="../owner/assets/icons/KosanKu2.png" alt="#logo">
                                 </div>
-                                <h4 class="sidebar-brand-text ms-1 text-white mt-3">KosanKu</h4>
+                                <h4 class="sidebar-brand-text ms-1 text-white mt-3">KOSANKU</h4>
                             </a>
 
                             <!-- Divider -->
@@ -175,17 +175,15 @@ if (!isset($_SESSION['login-admin'])) {
                                 <!-- Topbar -->
                                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 shadow">
                                     <!-- Sidebar Toggle (Topbar) -->
-                                    <button id="sidebarToggleTop" onclick="myFunction()"
-                                        class="btn btn-link rounded-circle d-sm-none mr-3">
+                                    <button id="sidebarToggleTop" onclick="myFunction()" class="btn btn-link rounded-circle d-sm-none mr-3">
                                         <i class="fa fa-bars"></i>
                                     </button>
                                     <!-- Topbar Navbar -->
                                     <ul class="navbar-nav ms-auto me-4">
                                         <!-- Nav Item - User Information -->
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton1"
-                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <span>Ini Nama Pemilik Kosan</span>
+                                            <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="text-capitalize"><?= $dataPemilik["nama"] ?></span>
                                                 <img class="img-profile rounded-circle ms-2 mb-1" width="20px"
                                                     height="20px" src="../owner/assets/icons/logo.png">
                                             </a>

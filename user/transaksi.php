@@ -280,6 +280,4 @@ $totalPembayaran = $_SESSION['harga'] * $_SESSION['durasi'];
 
 </body>
 
-
-
 </html>
