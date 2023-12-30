@@ -52,7 +52,7 @@ if (isset($_POST['btn-kos-singup'])) {
     <title>Sign Up</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/app/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/app/css/custom.style.css">
     <!-- FavIcon -->
     <link rel=" icon" href="assets/icons/KosanKu2.png">
@@ -270,7 +270,7 @@ if (isset($_POST['btn-kos-singup'])) {
         </section>
     </main>
 
-    <script src="assets/app/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="assets/app/js/jquery.min.js"></script>
 
 </body>

@@ -129,12 +129,12 @@ $barChartData = array(
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- FontAwesome Icons -->
-    <link href="../owner/assets/icons/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS Bootstrap -->
-    <link href="../owner/assets/app/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--  CSS File -->
-    <link href="../owner/dist/css/index.css" rel="stylesheet"">
-    <link href=" assets/app/css/style.css" rel="stylesheet"">
+    <link href="../owner/dist/css/index.css" rel="stylesheet">
+    <link href=" assets/app/css/style.css" rel="stylesheet">
     <!-- FavIcon -->
     <link rel=" icon" href="assets/icons/KosanKu2.png">
 </head>
@@ -485,10 +485,8 @@ $barChartData = array(
             }
         }
     </script>
-
-    <!-- <script src="../owner/assets/app/js/bootstrap.min.js"></script> -->
     <script src="../owner/dist/js/jquery.js"></script>
-    <script src="../owner/assets/app/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <!-- Custom scripts for all pages-->
     <!-- <script src="/owner/dist/js/hehe.js"></script> -->
