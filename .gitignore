@@ -1,0 +1,4 @@
+#testing
+/vendor
+composer.json
+composer.lock
