@@ -321,55 +321,36 @@ dapat membiasakan diri untuk selalu bangun pagi";
                                 <img src="assets/images/owl5.jpg" alt="bangun pagi">
                             </div>
                             <h5 class="mb-0 text-center"><b>Tips Menghemat ala Anak Kos</b></h5>
-                            <?php if (strlen($teks1) > 100) : ?>
-                            <p class="text-center p-4"><?= substr($teks1, 0, 97) . " ..." ?></p>
-                            <?php else : ?>
-                            <p class="text-center p-4"><?= $teks1 ?></p>
-                            <?php endif; ?>
+                            
+                            <p class="text-center p-4"><?= substr($teks1, 0, 97) . " ..." ?></p>   
                         </div>
                         <div class="slider-card">
                             <div class="d-flex justify-content-center align-items-center mb-4">
                                 <img src="assets/images/owl2.jpg" alt="cepat lulus">
                             </div>
                             <h5 class="mb-0 text-center"><b>Tips Cepat Lulus</b></h5>
-                            <?php if (strlen($teks2) > 100) : ?>
                             <p class="text-center p-4"><?= substr($teks2, 0, 97) . " ..." ?></p>
-                            <?php else : ?>
-                            <p class="text-center p-4"><?= $teks2 ?></p>
-                            <?php endif; ?>
                         </div>
                         <div class="slider-card">
                             <div class="d-flex justify-content-center align-items-center mb-4">
                                 <img src="assets/images/owl3.jpg" alt="kost terbaik">
                             </div>
                             <h5 class="mb-0 text-center"><b>Tempat Mencari Kosan Terbaik</b></h5>
-                            <?php if (strlen($teks3) > 100) : ?>
                             <p class="text-center p-4"><?= substr($teks3, 0, 97) . " ..." ?></p>
-                            <?php else : ?>
-                            <p class="text-center p-4"><?= $teks3 ?></p>
-                            <?php endif; ?>
                         </div>
                         <div class="slider-card">
                             <div class="d-flex justify-content-center align-items-center mb-4">
                                 <img src="assets/images/owl4.jpg" alt="belajar efektif">
                             </div>
                             <h5 class="mb-0 text-center"><b>Tips Belajar Efektif</b></h5>
-                            <?php if (strlen($teks4) > 100) : ?>
                             <p class="text-center p-4"><?= substr($teks4, 0, 97) . " ..." ?></p>
-                            <?php else : ?>
-                            <p class="text-center p-4"><?= $teks4 ?></p>
-                            <?php endif; ?>
                         </div>
                         <div class="slider-card">
                             <div class="d-flex justify-content-center align-items-center mb-4">
                                 <img src="assets/images/owl1.jpg" alt="">
                             </div>
                             <h5 class="mb-0 text-center"><b>Tips Bangun Pagi Rutin</b></h5>
-                            <?php if (strlen($teks5) > 100) : ?>
                             <p class="text-center p-4"><?= substr($teks5, 0, 97) . " ..." ?></p>
-                            <?php else : ?>
-                            <p class="text-center p-4"><?= $teks5 ?></p>
-                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
