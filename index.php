@@ -56,5 +56,9 @@
       </div>
     </section>
     
-  
 </body></html>
+
+<?php
+  $pemilik;
+  $penyewa;
+?>
